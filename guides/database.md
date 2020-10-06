@@ -4,7 +4,7 @@
 
 ## Database Mirroring
 
-Instead of creating a proprietary one-size-fits-all data architecture to store your content, Directus "mirrors" whatever is in your actual SQL database. Think of it like a database client (eg: phpMyAdmin, Sequel Pro, etc) only safe and intutiive enough for non-technical users. This makes it an ideal solution for projects that would like:
+Instead of creating a proprietary one-size-fits-all data architecture to store your content, Directus "mirrors" whatever is in your actual SQL database. Think of it like a database client (eg: phpMyAdmin, Sequel Pro, etc) only safe and intuitive enough for non-technical users. This makes it an ideal solution for projects that would like:
 
 * A pure/custom database model that fits their needs
 * Significant performance optimizations and indexing
@@ -14,13 +14,13 @@ Instead of creating a proprietary one-size-fits-all data architecture to store y
 
 ### What is a relational database?
 
-Directus has been built to support the most common type of relational database: SQL (Structured Query Language). If you're confused by "relational", it just means that you can add an item in the database once, and then relate it to many other items. For example, you could relate a single author to all of their books instead of typing the same author's name into each of their books.
+Directus has been built to support the most common type of relational database: SQL (Structured Query Language). If you're confused by "relational," it just means that you can add an item in the database once, and then relate it to many other items. For example, you could relate a single author to all of their books instead of typing the same author's name into each of their books.
 
 ### How Directus works with databases
 
 One of the most unique concepts of Directus is that it aims to be a pure SQL database wrapper. When you create Directus collections, fields, defaults, datatypes... you are actually just creating tables, columns, etc in a custom SQL database. That means you do not need to shoe-horn your project architecture into a predefined CMS schema. **You are in total control of your data, including how it's organized, stored, and optimized.**
 
-More importantly, all the Directus "stuff" such as settings, revisions, preferences, permissions, comments, etc... are all stored in completely separarate tables from your content. This decoupled approach means that you can easily install Directus on top of an existing SQL database to get started. Or, if you ever want to take your data elsewhere, just delete those Directus system tables and your content remains in a pristine SQL database with no hint that Directus was ever there. **You data is always completely pure and portable so you can come and go from Directus at will.**
+More importantly, all the Directus "stuff" such as settings, revisions, preferences, permissions, comments, etc... are all stored in completely separate tables from your content. This decoupled approach means that you can easily install Directus on top of an existing SQL database to get started. Or, if you ever want to take your data elsewhere, just delete those Directus system tables and your content remains in a pristine SQL database with no hint that Directus was ever there. **You data is always completely pure and portable so you can come and go from Directus at will.**
 
 ### Database vs Directus
 
